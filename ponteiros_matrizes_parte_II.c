@@ -16,5 +16,15 @@ int main(void){
                 free(x[i]);
             }
         free(x);
-            
+ 
+    int **z;
+        z = malloc(nl * sizeof(int));
+        z[0] = malloc(nc * nl * sizeof(int));
+
+            for (i = 0; i<nl; i++){
+                z[i] = z[i-1]+nc;
+            }
+    free(z[0]);
+    free(z);
+
 }
