@@ -8,6 +8,6 @@ int main (void){
     p = &i;
     q = &j;
 
-    
+    printf();
 
 }
