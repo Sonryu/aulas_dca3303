@@ -10,10 +10,13 @@ printf("contador/valor/valor/endereco/endereco\n");
     for(i = 0 ; i <= 4 ; i++){
     
         printf("i = %d",i);
-        printf(" vet[%d] = %.1f",i, vet[i]);
-        printf(" *(f + %d) = %.1f",i, *(f+i));
-        printf(" &vet[%d] = %X",i, &vet[i]);
-        printf(" (f + %d) = %X",i, f+i);
+        printf(" | vet[%d] = %.1f",i, vet[i]);
+        printf(" | *(f + %d) = %.1f",i, *(f+i));
+        printf(" | &vet[%d] = %X",i, &vet[i]);
+        printf(" | (f + %d) = %X",i, f+i);
         printf("\n");
     }
+
+    // foram obtidas as respostas esperadas, pois são dois jeitos de fazer as mesmas operações  
+
 }
