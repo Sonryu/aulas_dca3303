@@ -6,7 +6,7 @@ int main() {
     float  v_f[4];
     double v_d[4];
 
-    printf("--- ARITMETICA DE PONTEIROS ---\n\n");
+    printf("[] ARITMETICA DE PONTEIROS []\n\n");
 
     printf("CHAR (1 byte):\n");
     printf("x+1: %p | x+2: %p | x+3: %p\n\n", (void*)(v_c+1), (void*)(v_c+2), (void*)(v_c+3));
