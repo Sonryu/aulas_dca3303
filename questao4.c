@@ -59,30 +59,30 @@ vetor[0] = 31;
 vetor[1] = 45;
 vetor[2] = 27;
 p4 = vetor;
-idade = *p4;
+idade = *p4; // lendo o conteudo de p4, nesse caso por n ter especificado qual a posicao do array "vetor", ele vai iniciar do zero.
 printf("%d \n", idade);
 
 /* (i) */
 p5 = p4 + 1;
-idade = *p5;
+idade = *p5; // andou "uma casa" na memoria, sendo assim, agora esta em vetor[1] (segunda 'casa')
 printf("%d \n", idade);
 
 /* (j) */
 p4 = p5 + 1;
-idade = *p4;
+idade = *p4; // mesma coisa mas apenas inverteu p4  p5, no fim apenas "andou mais uma casa" na memoria
 printf("%d \n", idade);
 
 /* (l) */
 p4 = p4 - 2;
-idade = *p4;
+idade = *p4; // voltou "duas casas"
 printf("%d \n", idade);
 
 /* (m) */
-p5 = &vetor[2] - 1;
+p5 = &vetor[2] - 1; // recua uma posicao a partir do endereço de vetor[2]
 printf("%d \n", *p5);
 
 /* (n) */
-p5++;
+p5++; // desfaz a anterior. sendo assim, estava na posição de vetor[1] e agora volta pra vetor[2]
 printf("%d \n", *p5);
 return(0);
 
