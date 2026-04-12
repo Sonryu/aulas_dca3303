@@ -29,7 +29,7 @@ printf("%d \n", valor);
 /* (b) */
 temp = 26.5;
 p2 = &temp;
-*p2 = 29.0; //o conteudo de p2, que é o endereço de temp, agora é 29.0
+*p2 = 29.0; //o valor da variável temp foi alterado para 29.0 atraves do ponteiro p2
 printf("%.1f \n", temp);
 
 /* (c) */
@@ -59,7 +59,7 @@ vetor[0] = 31;
 vetor[1] = 45;
 vetor[2] = 27;
 p4 = vetor;
-idade = *p4; // lendo o conteudo de p4, nesse caso por n ter especificado qual a posicao do array "vetor", ele vai iniciar do zero.
+idade = *p4; // lendo o conteudo de p4, ele vai iniciar do zero [ O nome de um vetor (nome) aponta automaticamente para o primeiro elemento. ].
 printf("%d \n", idade);
 
 /* (i) */
