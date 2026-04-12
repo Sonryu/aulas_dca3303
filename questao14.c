@@ -2,12 +2,12 @@
 
 int f(int a, int *pb, int **ppc) {
     int b, c;
-    **ppc += 1;
-    c = **ppc;
-    *pb += 2;
+    **ppc += 1; // entrando no valor c na main e soamdno 1, sendo assim c da main agr eh 6
+    c = **ppc; // c, dessa funcao, esta copiando o c da main atravez desse ponteiro de ponteiro
+    *pb += 2; // pb aponta diretamente para c da main e soma 2, difente de ppc ela n precisa passar por outro ponteiro
     b = *pb;
-    a += 3;
-    return a + b + c;
+    a += 3; // variavel local somando 3 ao valor inical de 5 que estava sendo apontado
+    return a + b + c; //soma dos valores trabalhados
 }
 
 // nao sei se eh diferenca entre o GCC e o CLANG, pois eu uso o CLANG, mas ele n ta deixando eu usar o void main()
