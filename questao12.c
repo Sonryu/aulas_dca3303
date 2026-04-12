@@ -11,7 +11,7 @@
 
 int main(){
 
-printf("LER OS COMENTARIOS DO CODIGO." );
+printf("LER OS COMENTARIOS DO CODIGO.\n" );
 
 
 }
