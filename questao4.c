@@ -47,11 +47,11 @@ p3 = nome; //O nome de um vetor (nome) aponta automaticamente para o primeiro el
 printf("%c \n", *p3);
 
 /* (f) */
-p3 = p3 + 4;
+p3 = p3 + 4; // foi somado 4 ao endereco de p3, se antes era "P", apos 4 "casas"  é "e"
 printf("%c \n", *p3);
 
 /* (g) */
-p3--;
+p3--; //agora "volta um casa", sendo assim, "t"
 printf("%c \n", *p3);
 
 /* (h) */
